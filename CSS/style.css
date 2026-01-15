@@ -1,0 +1,95 @@
+body { /* general styling for website */
+    background-image: url("../Images/BACKGIF.gif");
+    color: green;
+    font-size: 17px;
+    font-family: "Helvetica";
+}
+.active { /* background color of the button of the current page */
+    background-color: burlywood;
+}
+h1 { /* adjusts main headers */
+    font-size: 30px;
+    margin-top: 100px;
+    color: darkred;
+    text-decoration: underline;
+}
+h2 { /* adjusts secondary headers */
+    color: red;
+    font-size: 18px;
+}
+img { /* adds border for images */
+    border: 1px solid blue;
+}
+nav ul { /* general styling for Navbar uls */
+    list-style-type: none;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    position: fixed;  /* Navbar stays with scrolling */
+    top: 0;
+    left: 0; /* makes sure navbar is tangent to left and top edges */
+}
+nav li { /* general styling for Navbar lis */
+    float: left;
+    background-color: #333;
+}
+nav li a { /* styling for links in Navbar */
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 28px 32px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {  /* Color when mouse not hovering */
+    background-color: green;
+}
+nav li:hover > ul { /* styling for when tab has mouse hovering on it */
+    position: absolute;
+    width: 100px;
+    top: 100%;
+    padding: 0;
+}
+.dropbtn:not(.active) { /* styling for activities button */
+    background-color: #333;
+    color: white;
+    border: none;
+    height: 85px;
+    font-size: 24px;
+    width: 140px;
+}
+.dropbtna { /* styling for buttons that are both a dropdown button and active */
+    background-color: burlywood;
+    color: white;
+    border: none;
+    height: 85px;
+    font-size: 24px;
+    width: 140px;
+}
+.dropdown { /* general dropdown styling */
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content { /* styling of options in dropdown menu */
+    display: none;
+    position: relative;
+    background-color: green;
+}
+.dropdown-content a { /* styling of links in dropdown menu */
+    color: white;
+    padding: 8px 8px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover { /* styling of links in dropdown menu with hover */
+    background-color: limegreen;
+}
+.dropdown:hover .dropdown-content { /* general dropdown styling with hover */
+    display: block;
+}
+.dropdown:hover .dropbtn { /* dropdown menu background color */
+    background-color: green;
+}
+table, th, td { /* table styling */
+    border: 1px solid white;
+}
